@@ -1,0 +1,14 @@
+name: Handle External Dispatch
+
+on:
+  repository_dispatch:
+    types: [my-custom-event] # The name of your event
+
+jobs:
+  run-dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log Payload
+        run: |
+          echo "Event type: ${{ github.event.action }}"
+          echo "Payload message: ${{ github.event.client_payload.message }}"
