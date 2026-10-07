@@ -1,1 +1,32 @@
-
+{
+  "categories": {
+    "Bi": [
+      "CT/DT aa",
+      "Dentalröntgen",
+      "Fluoroskopi",
+      "Kontrastundersökningar",
+      "MRI",
+      "Myelografi",
+      "Röntgen",
+      "Scintigrafi",
+      "Ultraljud"
+    ],
+    "Fu": [
+      "Andningsfunktionstest",
+      "Arbets-/belastningsprov",
+      "Elektroencefalografi",
+      "Hältutredning",
+      "Kardiologiska funktionstest",
+      "Neurologiska funktionstest",
+      "Rörelseanalys",
+      "Smärtbedömning"
+    ],
+    "Kl_un": [
+      "Allmän undersökning",
+      "Besiktning"
+    ]
+  },
+  "comments": {
+    "Rörelseanalys": "Tex ridprov, böjprov, longering "
+  }
+}
