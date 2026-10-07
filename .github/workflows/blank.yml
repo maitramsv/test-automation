@@ -5,10 +5,15 @@ on:
     types: [my-custom-event] # The name of your event
 
 jobs:
-  run-dispatch:
+  process-data:
     runs-on: ubuntu-latest
     steps:
-      - name: Log Payload
+      - name: Print raw payload
         run: |
-          echo "Event type: ${{ github.event.action }}"
-          echo "Payload message: ${{ github.event.client_payload.message }}"
+          echo "Full payload received:"
+          echo '${{ toJson(github.event.client_payload) }}'
+
+      - name: Access specific JSON properties
+        run: |
+          echo "Categories:"
+          echo '${{ toJson(github.event.client_payload) }}'
