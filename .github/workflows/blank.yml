@@ -5,15 +5,25 @@ on:
     types: [my-custom-event] # The name of your event
 
 jobs:
-  process-data:
+  commit-json:
     runs-on: ubuntu-latest
-    steps:
-      - name: Print raw payload
-        run: |
-          echo "Full payload received:"
-          echo '${{ toJson(github.event.client_payload) }}'
+    
+    # Grant permissions to write/commit back to the repository
+    permissions:
+      contents: write
 
-      - name: Access specific JSON properties
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Save Client Payload to JSON File
         run: |
-          echo "Categories:"
-          echo '${{ toJson(github.event.client_payload) }}'
+          # Write the JSON payload directly into a file (e.g., data/excel_output.json)
+          mkdir -p data
+          echo '${{ toJson(github.event.client_payload) }}' > data/excel_output.json
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "auto: update excel output from Power Automate dispatch"
+          file_pattern: "data/excel_output.json"
