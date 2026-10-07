@@ -1,7 +1,7 @@
 {
   "categories": {
-    "Bi": [
-      "CT/DT aa",
+    "Bild": [
+      "CT/DT",
       "Dentalröntgen",
       "Fluoroskopi",
       "Kontrastundersökningar",
@@ -11,7 +11,7 @@
       "Scintigrafi",
       "Ultraljud"
     ],
-    "Fu": [
+    "Funk": [
       "Andningsfunktionstest",
       "Arbets-/belastningsprov",
       "Elektroencefalografi",
@@ -21,12 +21,70 @@
       "Rörelseanalys",
       "Smärtbedömning"
     ],
-    "Kl_un": [
+    "Klin_unde": [
       "Allmän undersökning",
-      "Besiktning"
+      "Besiktning",
+      "Blodtrycksmätning",
+      "Oral undersökning",
+      "Ortopedisk status",
+      "Otoskopi/öronundersökning",
+      "Ögonundersökning"
+    ],
+    "Labo": [
+      "Blodgas",
+      "Cytologi",
+      "Endokrinologi",
+      "Genetik",
+      "Hematologi",
+      "Histopatologi",
+      "Immunologiska tester",
+      "Klinisk kemi",
+      "Koagulationsanalys",
+      "Mikrobiologi",
+      "Parasitologi",
+      "Reproduktionslaboratorier",
+      "Toxikologi"
+    ],
+    "Ofta_diag": [
+      "Fluoresceintest",
+      "Spaltlampsundersökning",
+      "Tryckmätning ögon/tonometri",
+      "Schirmers tårtest",
+      "Ögonlysning"
+    ],
+    "Prov": [
+      "Biopsitagning",
+      "Blodprovstagning",
+      "CSF-provtagning",
+      "Dermatologisk provtagning",
+      "Finnålsaspirat/FNA",
+      "Provtagning ospecificerad",
+      "Punktion",
+      "Urinprovstagning"
+    ],
+    "special": [
+      "Beteendeundersökning/beteenderådgivning",
+      "Endoskopi",
+      "Pricktest",
+      "Obduktion"
+    ],
+    "Övri_diag": [
+      "Undersökning ospecificerad"
     ]
   },
   "comments": {
-    "Rörelseanalys": "Tex ridprov, böjprov, longering "
+    "Bild": "Visualizing internal body structures non-invasively using radiation, sound waves, or magnetic fields (e,g X-rays, MRI, CT scans, ...)?",
+    "Funk": "Assessing how well a specific organ, tissue, or physiological system is working under active or resting conditions?",
+    "Immunologiska tester": "Tex allergitest",
+    "Klinisk kemi": "Tex laktat",
+    "Labo": "Quantitative or qualitative analysis of biological samples (collected during provtagning) in a lab?",
+    "Mikrobiologi": "Bakteriologi, virologi, mykologi Tex FIV/FELV, bakterieodling, odling öra, urinodling, parvo, herpes, corona",
+    "Ofta_diag": "Specialized evaluation specifically focused on vision, eye anatomy, and eye health?",
+    "Oral undersökning": "Munhåleundersökning",
+    "Ortopedisk status": "Tex draglåda",
+    "Parasitologi": "Tex Giardia-test, träckprover",
+    "Prov": "The procedure of collecting physical samples (e.g blood, urine, tissue, ...) from the body to send for analysis?",
+    "Reproduktionslaboratorier": "Tex progesterontest",
+    "Rörelseanalys": "Tex ridprov, böjprov, longering"
   }
 }
